@@ -21,8 +21,10 @@ spec:
             - mountPath: /data
               name: cache-volume
           env:
+            - name: POSTGRES_USER
+              value: keycloak
             - name: POSTGRES_PASSWORD
-              value: testpassword
+              value: changeme
             - name: PGDATA
               value: /data/pgdata
             - name: POSTGRES_DB
