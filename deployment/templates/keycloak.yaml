@@ -19,4 +19,4 @@ spec:
   ingress:
     className: openshift-default
   hostname:
-    hostname: test.keycloak.org
+    strict: false
