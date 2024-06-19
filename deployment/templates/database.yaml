@@ -21,16 +21,8 @@ spec:
             - mountPath: /data
               name: cache-volume
           env:
-            - name: POSTGRES_USER
-              valueFrom:
-                secretKeyRef:
-                  name: keycloak-db-secret
-                  key: username
             - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: keycloak-db-secret
-                  key: password
+              value: testpassword
             - name: PGDATA
               value: /data/pgdata
             - name: POSTGRES_DB
