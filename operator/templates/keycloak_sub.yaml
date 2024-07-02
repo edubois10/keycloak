@@ -1,14 +1,12 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  labels:
-    operators.coreos.com/rhbk-operator.keycloak: ''
   name: rhbk-operator
   namespace: keycloak
 spec:
-  channel: stable-v24
+  channel: stable-v22
   installPlanApproval: Automatic
   name: rhbk-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: rhbk-operator.v24.0.4-opr.1
+  startingCSV: rhbk-operator.v22.0.9-opr.1
