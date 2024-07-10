@@ -17,5 +17,5 @@ spec:
   http:
     tlsSecret: example-tls-secret
   hostname:
-    hostname: keycloak-keycloak.apps.cluster-tf45l.dynamic.redhatworkshops.io
+    hostname: keycloak-rhbk.apps.cluster-tf45l.dynamic.redhatworkshops.io
     strict: false
