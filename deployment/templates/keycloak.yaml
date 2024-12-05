@@ -17,5 +17,5 @@ spec:
   http:
     tlsSecret: example-tls-secret
   hostname:
-    hostname: keycloak-rhbk.apps.cluster-s5wtj.s5wtj.sandbox1936.opentlc.com
+    hostname: {{ .Values.route }}
     strict: false
