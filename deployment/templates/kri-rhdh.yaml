@@ -23,3 +23,17 @@ spec:
     displayName: RHDH Realm
     enabled: true
     realm: {{ .Values.realm.rhdh.name }}
+    # Define roles
+    roles:
+      - name: "realm-management: query-users"
+        description: "Allows querying users"
+        composite: false
+        clientRole: false
+      - name: "realm-management: query-groups"
+        description: "Allows querying groups"
+        composite: false
+        clientRole: false
+      - name: "realm-management: view-users"
+        description: "Allows viewing users"
+        composite: false
+        clientRole: false
