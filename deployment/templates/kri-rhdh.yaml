@@ -7,19 +7,19 @@ spec:
   keycloakCRName: example-kc
   realm:
     clients:
-      - adminUrl: '{{ .Values.rhdh.host }}'
+      - adminUrl: {{ .Values.realm.rhdh.host }}
         enabled: true
         clientAuthenticatorType: client-secret
         redirectUris:
-          - '{{ .Values.rhdh.host }}/api/auth/oidc/handler/frame'
+          - {{ .Values.realm.rhdh.host }}/api/auth/oidc/handler/frame
         serviceAccountsEnabled: true
         clientId: {{ .Values.realm.rhdh.name }}
         authorizationServicesEnabled: false
         name: {{ .Values.realm.rhdh.name }}
-        rootUrl: '{{ .Values.rhdh.host }}'
+        rootUrl: {{ .Values.realm.rhdh.host }}
         secret: changeme
         webOrigins:
-          - '{{ .Values.rhdh.host }}'
+          - {{ .Values.realm.rhdh.host }}
     displayName: RHDH Realm
     enabled: true
     realm: {{ .Values.realm.rhdh.name }}
