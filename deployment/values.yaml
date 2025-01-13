@@ -1,6 +1,6 @@
-route: https://keycloak-rhbk.apps.cluster-sjttg.sjttg.sandbox2473.opentlc.com
+route: https://keycloak-rhbk.apps.cluster-xgbs2.xgbs2.sandbox663.opentlc.com
 
 realm:
   rhdh:
-    host: https://backstage-developer-hub-rhdh.apps.cluster-sjttg.sjttg.sandbox2473.opentlc.com
+    host: https://backstage-developer-hub-rhdh.apps.cluster-xgbs2.xgbs2.sandbox663.opentlc.com
     name: rhdh
